@@ -19,6 +19,9 @@ public class Demo {
         runBusinessLogic();
     }
 
+    /**
+     * 根据配置或环境选项选择具体工厂。
+     */
     public static void configure(){
         if(System.getProperty("os.name").equals("Windows 10")){
             dialog = new WindowsDialog();
@@ -27,6 +30,9 @@ public class Demo {
         }
     }
 
+    /**
+     * 所有客户端代码都应该通过抽象接口与工厂和产品一起使用。这样它就不会关心与哪家工厂合作以及返回什么样的产品。
+     */
     public static void runBusinessLogic(){
         dialog.renderWindow();
     }
