@@ -10,6 +10,7 @@ import java.util.zip.DeflaterOutputStream;
 import java.util.zip.InflaterInputStream;
 
 /**
+ * CompressionDecorator 是 DataSourceDecorator 的另一个具体实现，它为数据源添加了压缩和解压缩的功能。
  * @author : xiongjun
  * @date : 2024/8/12 15:15
  */
@@ -31,11 +32,13 @@ public class CompressionDecorator extends DataSourceDecorator{
 
     @Override
     public void writeData(String data) {
+        //写入数据之前对数据进行压缩
         super.writeData(compress(data));
     }
 
     @Override
     public String readData() {
+        //读取数据后对其进行解压缩。
         return decompress(super.readData());
     }
 

@@ -5,6 +5,7 @@ import java.nio.file.Files;
 
 /**
  * 简单的数据读写器
+ * FileDataSource 是 DataSource 的具体实现类，它代表文件系统中的数据源。它包含一个 name 字段，表示文件的名称。
  * @author : xiongjun
  * @date : 2024/8/8 14:38
  */
