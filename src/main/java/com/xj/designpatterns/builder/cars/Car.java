@@ -7,6 +7,7 @@ import com.xj.designpatterns.builder.components.TripComputer;
 import lombok.Data;
 
 /**
+ * 汽车产品
  * @author : xiongjun
  * @date : 2024/8/22 17:50
  */

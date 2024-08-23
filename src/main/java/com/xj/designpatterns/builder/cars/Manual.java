@@ -6,6 +6,7 @@ import com.xj.designpatterns.builder.components.Transmission;
 import com.xj.designpatterns.builder.components.TripComputer;
 
 /**
+ * 手册产品
  * @author : xiongjun
  * @date : 2024/8/23 10:15
  */
